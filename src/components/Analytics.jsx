@@ -10,7 +10,7 @@ function Analytics() {
             <div className=' text-black flex flex-col justify-center mx-4 p-1 md:p-4'>
                 <p className='text-[#00df9a] font-bold'>DATA ANALYTICS DASHBOARD</p>
                 <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold py-2'>Manage Data Analytics Centrally</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum officia doloribus quibusdam unde inventore iste fugit, repudiandae, vero velit quod facilis aliquid ipsa. Eaque nemo eum laborum itaque architecto!</p>
+                <p>As companies recognize the predictive power of advanced analytics, many are hoping to use AA to drive their business decisions and strategies. While most companies understand the importance of analytics and have adopted common best practices, fewer than 20 percent, have maximized the potential and achieved AA at scale.</p>
                 <button className='bg-black w-[160px] rounded-md font-semibold mx-auto md:mx-0  my-6 py-3  text-[#00df9a] hover:bg-gray-900'>Get Started</button>
             </div>
         </div>

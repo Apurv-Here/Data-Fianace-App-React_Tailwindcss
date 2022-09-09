@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
 
-    const [nav, setNav] = useState(true);
+    const [nav, setNav] = useState(false);
 
     const handleNav = () => {
         setNav(!nav);
@@ -18,11 +18,11 @@ function Navbar() {
                 <a href="/"><li className='p-4 hover:text-gray-500 text-xl'>About</li></a>
                 <a href="/"><li className='p-4 hover:text-gray-500 text-xl'>Contact</li></a>
             </ul></div>
-            <div onClick={handleNav} className='block lg:hidden'>
-                { !nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            <div onClick={handleNav} className='block lg:hidden mr-2'>
+                { nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
                 
             </div>
-            <div className={ !nav ? 'bg-gay-600 fixed left-0 top-20 w-[60%] h-full border-r border-r-gray-900 bg-black ease-in-out duration-500 lg:hidden lg:invisible' : 'fixed left-[-100%] lg:hidden lg:invisible'}>
+            <div className={ nav ? 'bg-gay-600 fixed left-0 top-20 w-[60%] h-full border-r border-r-gray-900 bg-black ease-in-out duration-500 lg:hidden lg:invisible' : 'fixed left-[-100%] lg:hidden lg:invisible'}>
 
                 <ul className='uppercase p-4'>
                     <a href="/"><li className='p-4 border-b border-gray-600 text-xl'>Home</li></a>
